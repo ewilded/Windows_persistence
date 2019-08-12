@@ -22,6 +22,9 @@
  
  External resources: https://attack.mitre.org/techniques/T1182/
  
+# cmd.exe keys
+ - HKEY_LOCAL_MACHINE\Software\Microsoft\Command Processor\AutoRun
+ - HKEY_CURRENT_USER\Software\Microsoft\Command Processor\AutoRun
 
 # Image file execution options
   - HKLM\Software\Microsoft\Windows NT\currentversion\image file execution options
@@ -62,6 +65,7 @@ reg add "HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run" /v Use
 
 
 HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Run
+HKLM\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\RunOnce
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Run
 HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\RunOnce
 HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon
